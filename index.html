@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>TRANSLATE</h1>
+        <div class="input-group">
+            <textarea id="textInput" placeholder="Enter text to translate..."></textarea>
+        </div>
+        <div class="controls">
+            <select id="sourceLanguage">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="id">Indonesian</option>
+            </select>
+            <p>TO</p>
+            <select id="targetLanguage">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="id">Indonesian</option>
+            </select>
+        </div>
+        <button onclick="translateText()">Translate Now</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="bekend.js"></script>
+</body>
+</html>
